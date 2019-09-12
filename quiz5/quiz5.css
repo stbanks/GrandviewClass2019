@@ -1,0 +1,39 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(90, 4, 4);
+    font-size: 3em;
+}
+
+.content-box{
+    /*the size of this box (width by height)should be 600px by 300px 
+    it should be separated by 40px at the top and bottom, the box should also be centered 
+    colors: background is #cdf5bb
+    the content inside the box should be padded 20px from the top and bottom, 5px from right and 10px from left.
+    the borders sizes are 3px except the bottom one that is 5px.  
+    */
+    border-top: 3px solid black;
+    border-left: 3px dotted red;
+    border-right: 3px dotted purple;
+    border-bottom: 5px dotted aquamarine;
+    background-color: #cdf5bb;
+    width: 600px;
+    height: 300px;
+    margin: 40px auto 40px auto;
+    padding: 20px 5px 20px 10px;
+}
+
+.special-text{
+    visibility: hidden;
+}
+
+/*hint to correctly style this: you'll need to position this button absolutely in relation to the content-box. 
+            Position it with minus some negative number of pixels from corresponding sides.
+            It also has a red border and a coral background.*/
+.close-button{
+    display: inline-block;
+    border: 1px solid red;
+    background-color: coral;
+}
+
+
