@@ -1,0 +1,100 @@
+body{
+    background-color: slateblue;
+}
+
+h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding-top: 3em;
+}
+
+h2{
+    color: peachpuff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: overline;
+    padding-left: 50px;
+}
+
+ul{
+    list-style-type: circle;
+    padding: 100px;
+    color: rebeccapurple;
+    font-size: 4em;
+}
+
+p.firstClass{
+    color: rosybrown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline-block;
+}
+
+p::first-line{
+    font-variant: small-caps;
+}
+
+p{
+    color: mediumaquamarine;
+    padding: 2em;
+}
+
+a{
+    color: floralwhite;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: purple;
+}
+
+#different{
+    color: burlywood;
+    text-decoration: underline;
+}
+
+#different:hover{
+    color: purple;
+    text-decoration: none;
+}
+
+#goofin{
+    margin-left: 2em;
+    margin-bottom: 3em;
+    border: 5px solid purple;
+    display: inline-block;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+#goofin:hover{
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+#movieQuotes{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#movieQuotes td, #movieQuotes th{
+    border: 1px solid gray;
+    padding: 8px;
+}
+
+#movieQuotes tr:nth-child(even){
+    background-color: forestgreen;
+}
+
+#movieQuotes tr:hover{
+    background-color: lightskyblue; 
+}
+
+#movieQuotes th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: lightgreen;
+    color: white;
+}
