@@ -1,0 +1,65 @@
+body{
+    background-color: #F76B1C;
+}
+
+.box{
+    width: 600px;
+    height: 800px;
+    background-color: floralwhite;
+    margin: 60px auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+.logo img{
+    display: block;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+}
+
+.signInStation h1{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 200px;
+    padding-top: 275px;
+    display: block;
+}
+
+.signInStation p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: .9em;
+    padding-top: 15px;
+    margin-left: 25px;
+    margin-right: 14px;
+    color: gray;
+}
+
+input[type=text]{
+    width: 50%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    display: block;
+    border: 1px solid black;
+    background: floralwhite;
+}
+
+.signInForm label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .9em;
+    margin-left: 139px;
+}
+
+.button button{
+    background-color: skyblue;
+    color: floralwhite;
+    border: none;
+    cursor: pointer;
+    width: 54%;
+    height: 37px;
+    margin-left: 137px;
+}
