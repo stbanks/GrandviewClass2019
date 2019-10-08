@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Practice</title>
+
+        <script>
+            var total = 0;
+
+            function submitQuiz(){
+                var questionOne = document.getElementById('methodKey').value;
+                //alert(questionOne);
+                var questionTwo = document.getElementById('ID').value;
+                var questionThree = document.getElementById('admit').checked;
+                var questionFour = document.getElementById('what').value;
+
+                if(questionOne.toLowerCase() == "function"){
+                    total++;
+                }
+
+                if(questionTwo == "element"){
+                    total++;
+                }
+
+                if(questionThree == "script"){
+                    total++;
+                }
+
+                if(questionFour !==null && questionFour !== ""){
+                    total++;
+                }
+
+                document.getElementById("results").innerHTML = total.toString();
+            }
+
+        </script>
+    </head>
+    <body>
+
+        <!--
+            Create a page that that has four javascript questions. The answer options will be:
+            Question 1: input box (i.e. `<input type="text">`)
+            Question 2: Single select question - will have 4 select radio buttons
+            Question 3: Multiple choice question: 4 checkboxes
+            Question 5: Multiple choice questions but with a select box i.e. `<select> <option>...</option> ... </select>` with --select-- by default, and 4 options to select. This will also allow multiple selections! 
+
+            Use javascript to validate the answer. Once the user clicks Submit below the form display the result, something like this:
+            Question 1: you entered: ..., correct answer ...
+            Question 2: ...
+            Your total score: 1 point. 
+            (possible scores are 1, 2,3,4 points, a point for each question).
+
+            The submit button becomes enabled ONLY after the user fills in all the possible questions.
+        -->
+        <label for="question1">Question 1: What keyword defines a method?</label>
+        <input type="text" name="methodKey" id="methodKey">
+        <br>
+
+        <label for="question2">Question 2: Which selects an ID?</label>
+        <input type="radio" name="ID" id="ID" value="choose">choose
+        <input type="radio" name="ID" id="ID" value="boop">boop
+        <input type="radio" name="ID" id="ID" value="bop">bop
+        <input type="radio" name="ID" id="ID" value="element">getElementById
+        <br>
+
+        <label for="question3">Question 3: How do you admit JS in HTML?</label>
+        <input type="checkbox" name="admit" id="admit"value="style">Style
+        <input type="checkbox" name="admit" id="admit" value="ahref">ahref
+        <input type="checkbox" name="admit" id="admit"  value="script">script
+        <input type="checkbox" name="admit" id="admit" value="option">option
+        <br>
+
+        <label for="question4">Question 4: What?</label>
+        <select multiple name="what" id="what">
+            <option value="default">--Select--</option>
+            <option value="who">Who?</option>
+            <option value="when">When?</option>
+            <option value="where">Where?</option>
+            <option value="why">Why?</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit" onclick="submitQuiz()">
+
+        <br><br>
+        <p>
+            Results: <span id="results"></span>
+        </p>
+    
+    </body>
+ </html>
